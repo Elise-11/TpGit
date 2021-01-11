@@ -16,3 +16,4 @@ def is_valid(adn_str):
 def get_valid_adn(prompt='chaîne : '):
     pass
 
+#this is a python script
