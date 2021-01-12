@@ -22,6 +22,5 @@ def get_valid_dna() :
         print("DNA chain is not valid \n please enter a new chain !")
     print("DNA chain is valid!")
 
-get_valid_dna()
 
 #this is a python script
