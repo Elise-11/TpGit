@@ -24,3 +24,4 @@ def get_valid_dna() :
 
 get_valid_dna()
 
+#this is a python script
