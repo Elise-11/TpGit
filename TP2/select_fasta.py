@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""This program is a parser, from a fasta file the user passes an arg seq,
-the program return associated sequences. """
+"""This program is a parser,the user passes arg sequence id
+and an inputfile,the program return id associated sequences.
+example :  python select_fasta.py -i ~/some_seq_from_ensembl.fa
+-id_seq ["ENST00000470931"," ENST00000377837"]"""
 
 import argparse
 from Bio import SeqIO
