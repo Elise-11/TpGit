@@ -35,10 +35,11 @@ def search_id(input_file, ids_list, outputfile):
                 #print (seq_id)
             #if seq_id is in the list containing request id
             #keep_fasta variable remain True else it changes to False
-                if seq_id in ids_list:
-                    keep_fasta = True
-                else:
-                    keep_fasta = False
+                #if seq_id in ids_list:
+                    #keep_fasta = True
+                #else:
+                    #keep_fasta = False
+                keep_fasta = seq_id in ids_list
             #if the line doesn't strat with ">"
             else:
                 #if keep_fasta variable is true
@@ -86,7 +87,7 @@ def main():
     parser = create_parser()
     args = parser.parse_args()
     #define comma as the seperator between sequence identifiers in the list
-    search_id(args.inputFile, args.id_sequences.split(","), args.outputfile)
+    search_id(args.input_file, args.id_sequences.split(","), args.outputfile)
 
 
 if __name__ == "__main__":
